@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Specificity</title>
+    <style>
+      /* element selectors 1  */
+      p {
+        color: aqua;
+      }
+      /* class selectors 10 */
+      .cred {
+        color: red;
+      }
+      /* class selectors 10 */
+      .cblue {
+        color: blue;
+      }
+      /* class selectors  1 + 10 */
+      p.cgreen {
+        color: green;
+      }
+      /* arttibute selectors 10 */
+      [data-x="a"] {
+        background-color: hotpink;
+      }
+      /* element 1 , class 10 , class 10 arttbiute 10 pseudo 10 = 41 */
+      a.asif.ateeq[href]:hover {
+        background-color: aqua;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>CSS Specificity</h1>
+    <p class="cred cblue cgreen" data-x="a">CSS Specificity</p>
+  </body>
+</html>

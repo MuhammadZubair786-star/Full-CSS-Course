@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Fit and Object Cover</title>
+    <style>
+      .container {
+        width: 40vw;
+        height: 60vh;
+        background-color: aquamarine;
+        border: 2px solid black;
+        background-image: url(image.png);
+        background-repeat: no-repeat;
+        background-position: center center;
+      }
+      img {
+        width: 40vw;
+        height: 50vh;
+        /* object-fit: cover;   */
+        /* object-fit: contain; */
+        /* object-position: top left; */
+        object-position: 50% 50%;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>CSS Fit and Object Cover</h1>
+    <div class="container">
+      <img src="image.png" alt="Zubair" />
+    </div>
+  </body>
+</html>

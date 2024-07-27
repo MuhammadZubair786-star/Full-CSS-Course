@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Selectors</title>
+    <style>
+      /* Unversial Selectors */
+      * {
+        padding: 0;
+        margin: 0;
+      }
+      /* Class Selectors */
+      .box {
+        color: violet;
+      }
+      /* ID Selectors */
+      #green {
+        color: blueviolet;
+      }
+      /* Descentant Selectors */
+      div p {
+        background-color: green;
+      }
+      /* Child Selectors */
+      div > p {
+        background-color: aqua;
+      }
+      /* First Element Selectors */
+      p:first-child {
+        background-color: chartreuse;
+      }
+      /* last Element Selectors */
+      /* p:last-child { */
+      /* background-color: cornflowerblue; */
+      /* } */
+      /* Pseudo Selectors */
+      /* links pr click krn sa */
+      a:active {
+        background-color: antiquewhite;
+      }
+      /* links pr click krn ka bad */
+      a:visited {
+        color: blue;
+      }
+      /* links pr click hona sa phel */
+      a:link {
+        color: purple;
+      }
+      /* links pr click hona sa  */
+      a:hover {
+        background-color: green;
+      }
+      /* First Element Selectors */
+      p:first-child {
+        background-color: darkmagenta;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>CSS Selectors</h1>
+    <div class="box">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed esse
+      molestiae qui!
+    </div>
+    <div id="green">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit tenetur
+      exercitationem doloribus repudiandae aliquam neque molestiae veniam,
+      similique voluptas suscipit commodi molestias quidem!
+    </div>
+    <div>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut eligendi
+        dicta quasi.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas eaque
+        consequatur temporibus error quaerat cumque impedit cupiditate! Natus
+        cupiditate quasi vitae eveniet asperiores.
+      </p>
+      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+    </div>
+    <p><a href="https://www.google.co.uk/">google</a></p>
+    <p><a href="https://www.Facebook.co.uk/">Facebook</a></p>
+    <p><a href="https://www.Youtube.co.uk/">Youtube</a></p>
+    <p><a href="https://www.Tiktok.co.uk/">Tiktok</a></p>
+  </body>
+</html>

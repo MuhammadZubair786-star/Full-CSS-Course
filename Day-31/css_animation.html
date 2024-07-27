@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Animation</title>
+    <style>
+      .container {
+        width: 50vw;
+        height: 80vh;
+        background-color: blueviolet;
+      }
+      .box {
+        width: 54px;
+        height: 50px;
+        /* background-color: hotpink; */
+        /* animation: Zubair;
+        animation-duration: 2s;
+        animation-iteration-count: 3;
+        animation-timing-function: cubic-bezier(0.42, 0, 0, 0.17);
+        animation-direction: alternate-reverse;
+        animation-play-state: paused; */
+        /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+        animation: Zubair 3s ease-in-out 2s 1 alternate,
+          freelancer 3s ease-in-out 2s 1 reverse;
+      }
+
+      @keyframes Zubair {
+        form {
+          background-color: green;
+        }
+        to {
+          background-color: blue;
+          transform: translate(700px);
+        }
+      }
+      @keyframes freelancer {
+        0% {
+          transform: rotate(100deg);
+        }
+        20% {
+          transform: rotate(200deg);
+        }
+        40% {
+          transform: rotate(300deg);
+        }
+        60% {
+          transform: rotate(400deg);
+        }
+        80% {
+          transform: rotate(500deg);
+        }
+        100% {
+          transform: rotate(600deg);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1>CSS Animation</h1>
+    <div class="container">
+      <div class="box"></div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Sizing Units</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      html {
+        font-size: 12px;
+      }
+      .box {
+        border: 2px solid black;
+        /* width: 1024px; */
+        width: 80vw;
+        margin: auto;
+        background-color: aqua;
+        box-sizing: border-box;
+      }
+      .container {
+        border: 2px solid blue;
+        /* width: 233px; */
+        font-size: 18px;
+        width: 80vw;
+        min-height: 80vh;
+        margin: 13px auto;
+        background-color: blueviolet;
+      }
+      .container > div {
+        font-size: 2rem;
+        width: 50%;
+        border: 2px solid black;
+      }
+      .container > div > div {
+        width: 50%;
+        border: 2px solid blue;
+      }
+      .mycont {
+        background-color: hotpink;
+        color: blueviolet;
+        font-size: 12px;
+        /* width: 100vmin; */
+        width: 80vw;
+        /* width: 100vmax; */
+        /* height: 100vmax; */
+        border: 2px solid blue;
+        margin: 12px auto;
+        box-sizing: border-box;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>CSS Sizing Units</h1>
+    <div class="box">I am box</div>
+    <div class="container">
+      <div>
+        I am container. Lorem ipsum dolor sit amet, consectetur adipisicing
+        elit. Temporibus consectetur quod nostrum neque hic commodi minus.
+        Nostrum quia odit cumque ex provident reprehenderit vitae consectetur
+        impedit amet consequuntur. Sed, nobis. Lorem ipsum dolor sit amet
+        consectetur adipisicing elit. Iusto, ratione! Veritatis sapiente tenetur
+        sequi, nostrum numquam suscipit dolores facilis magni ipsum voluptatem
+        deserunt quibusdam exercitationem, vero ex beatae fuga repellat?
+        Blanditiis vel excepturi similique quo cumque quos ex adipisci nesciunt
+        odit eum facere nihil necessitatibus cupiditate illum expedita, sed ab
+        laudantium mollitia!
+        <div>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore vel
+          maiores repudiandae!
+        </div>
+      </div>
+    </div>
+    <div class="mycont">I am mycont box</div>
+  </body>
+</html>

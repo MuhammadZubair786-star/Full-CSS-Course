@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Variables</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+      }
+      :root {
+        --color: rgb(212, 31, 236);
+        --seccolor: rgb(12, 216, 138);
+        --licolor: blue;
+        --licolor1: rgb(245, 12, 194);
+        --licolor2: rgb(42, 221, 7);
+        --defpad: 34px;
+        --defop: 0.2;
+      }
+      .nav {
+        background-color: var(--color);
+        height: 60px;
+        color: white;
+      }
+      .form {
+        background-color: var(--seccolor);
+      }
+      ul li {
+        list-style: none;
+        /* padding: var(--defpad); */
+        /* opacity: var(--defop); */
+      }
+      ul li:first-child {
+        --color: rgb(240, 3, 3);
+        background-color: var(--color, blueviolet);
+      }
+      ul li:nth-child(2) {
+        background-color: var(--licolor);
+      }
+      ul li:nth-child(3) {
+        background-color: var(--licolor1);
+      }
+      ul li:nth-child(4) {
+        background-color: var(--licolor2);
+      }
+      ul {
+        display: flex;
+        justify-content: center;
+        gap: 34px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="nav">
+      <ul>
+        <li>Home</li>
+        <li>About</li>
+        <li>Contact</li>
+        <li>Service</li>
+      </ul>
+    </div>
+    <h1>CSS Variables</h1>
+    <div class="form">
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur
+      veritatis molestiae, corporis temporibus sequi, soluta consequuntur velit
+      perferendis mollitia tenetur placeat, esse ducimus. Illum doloremque
+      repellat qui asperiores temporibus excepturi, perferendis omnis
+      dignissimos inventore!
+    </div>
+  </body>
+</html>

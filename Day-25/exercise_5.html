@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Exercise 5 Soultion Layout</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+      }
+      header {
+        background-color: green;
+        position: sticky;
+        top: 0;
+      }
+      ul {
+        display: flex;
+        justify-content: center;
+        color: white;
+        font-size: 23px;
+        gap: 23px;
+      }
+      ul li {
+        list-style: none;
+      }
+      .container {
+        margin: 12px 23px;
+        background-color: green;
+      }
+      main {
+        padding: 34px;
+        color: white;
+        background-color: black;
+      }
+      .boxes {
+        display: flex;
+        text-align: center;
+      }
+      .box {
+        width: 70vw;
+        height: 40vh;
+        padding: 45px;
+        margin: 64px;
+      }
+      .box1 {
+        background-color: palevioletred;
+        width: 70vw;
+        height: 40vh;
+      }
+      .box2 {
+        background-color: blue;
+        width: 70vw;
+        height: 40vh;
+      }
+      .conttext {
+        color: white;
+        border: 2px solid blanchedalmond;
+        margin: 20px 15vw;
+        padding: 10px;
+        width: 60vw;
+        font-size: 2em;
+        border-radius: 13px;
+      }
+      footer {
+        background-color: black;
+        height: 20vh;
+        color: white;
+        font-size: 23px;
+      }
+      ol {
+        /* right: 45px; */
+        display: flex;
+        gap: 34px;
+        list-style: none;
+        justify-content: center;
+        align-items: center;
+        padding: 45px;
+        margin: 34px;
+      }
+      a {
+        color: white;
+      }
+      .orangebox {
+        height: 23px;
+        width: 34px;
+        background-color: yellow;
+        bottom: 23px;
+        right: 23px;
+        border-radius: 13px;
+        position: fixed;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="/Day-10/display_property.html">Home</a></li>
+          <li><a href="/Day-11/css_shadows.html">About</a></li>
+          <li><a href="/Day-12/lists_styling.html">Contact</a></li>
+          <li><a href="/Day-13/overflow.html">Courses</a></li>
+          <li><a href="/Day-14/css_position.html">Help</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div class="container">
+        <div class="boxes">
+          <div class="box box1"></div>
+          <div class="box box2"></div>
+        </div>
+      </div>
+      <div class="conttext">Welcome to Sigma Web Developement Express</div>
+      <div class="orangebox"></div>
+    </main>
+    <footer>
+      <ol>
+        <li><a href="/Day-10/display_property.html">Home</a></li>
+        <li><a href="/Day-11/css_shadows.html">About</a></li>
+        <li><a href="/Day-12/lists_styling.html">Contact</a></li>
+        <li><a href="/Day-13/overflow.html">Courses</a></li>
+        <li><a href="/Day-14/css_position.html">Help</a></li>
+      </ol>
+    </footer>
+  </body>
+</html>
